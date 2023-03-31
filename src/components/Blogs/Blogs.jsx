@@ -1,6 +1,9 @@
 import React from "react";
 import { useState,useEffect } from "react";
-import Blog from "../Blog/Blog";
+import SingleBlog from "../SingleBlog/SingleBlog";
+
+
+
 
 
 const Blogs = () => {
@@ -18,9 +21,9 @@ const Blogs = () => {
       <p>this is the blog components</p>
 
 
-      {
-        blogs.map((blog) => <Blog key={blog._id} blog ={blog}></Blog> )
-      }
+     {
+      blogs.map((singleBlog) => <SingleBlog key={singleBlog._id} singleBlog = {singleBlog}></SingleBlog>)
+     }
     </div>
   );
 };
