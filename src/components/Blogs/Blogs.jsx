@@ -22,7 +22,7 @@ const Blogs = ({handleTimeBtn,handleBookmarkBtn}) => {
 
 
      {
-      blogs.map((singleBlog) => <SingleBlog key={singleBlog._id} singleBlog = {singleBlog} handleTimeBtn={handleTimeBtn} handleBookmarkBtn={handleBookmarkBtn} ></SingleBlog>)
+      blogs.map((singleBlog) => <SingleBlog key={singleBlog.id} singleBlog = {singleBlog} handleTimeBtn={handleTimeBtn} handleBookmarkBtn={handleBookmarkBtn} ></SingleBlog>)
      }
     </div>
   );

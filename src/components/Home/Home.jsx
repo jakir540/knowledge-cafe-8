@@ -2,6 +2,9 @@ import { useState } from "react";
 import Blogs from "../Blogs/Blogs";
 import QuestionAns from "../QuestionAns/QuestionAns";
 import SideBar from "../SideBar/SideBar";
+import { ToastContainer, toast } from 'react-toastify';
+
+
 
 const Home = () => {
   const[spentTime,setSpentTime]=useState(0)
@@ -12,11 +15,31 @@ const Home = () => {
     let totalTime = spentTime + time
     setSpentTime(totalTime);
   }
+  const handleToast =()=>{
+    toast("this Blog already Boolmarked")
+  }
 
-  const handleBookmarkBtn=(BlogTitle)=>{
-    setBlogNumber(blogNumber+1);
+  const handleBookmarkBtn=(BlogTitle,id)=>{
+   
+    if (blogNumber == id) {
+      handleToast();
+
+    }else{
+      setBlogNumber(blogNumber+1);
+    }
+
+
+
+
+
+
+
     let header=[]
+
+
     if (title) {
+
+      
       header=[...title,BlogTitle]
       setTitle(header);  
 

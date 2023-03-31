@@ -1,6 +1,6 @@
 [
     {
-      "_id": "6425bb53182c95ac05a7fd96",
+      "id": "1",
       "Author_name": "Carolina Morales",
       "read_time": 35,
       "blog_title": "How to get your first job as a self-taught programmer",
@@ -8,7 +8,7 @@
       "author_img": "https://images.unsplash.com/photo-1614502875832-77fe801288ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=785&q=80"
     },
     {
-      "_id": "6425bb53f03976b721e1b2da",
+      "id": "2",
       "Author_name": "Garza Underwood",
       "read_time": 25,
       "blog_title": "How to get your first job as a self-taught programmer",
@@ -16,7 +16,7 @@
       "author_img": "https://images.unsplash.com/photo-1607990281513-2c110a25bd8c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHByb2ZpbGUlMjBwaG90b3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
     },
     {
-      "_id": "6425bb53ea38bb5bbc8f2d7b",
+      "id": "3",
       "Author_name": "Sears Snow",
       "read_time": 15,
       "blog_title": "How to learn Binary search Algorithm(BFS) in DSA",
@@ -24,7 +24,7 @@
       "author_img": "https://images.unsplash.com/photo-1583674392771-2abf6be75965?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=767&q=80"
     },
     {
-      "_id": "6425bb53b51cc94189542d65",
+      "id": "4",
       "Author_name": "Essie Cain",
       "read_time": 5,
       "blog_title": " How to learn javascript basic programming A to Z",

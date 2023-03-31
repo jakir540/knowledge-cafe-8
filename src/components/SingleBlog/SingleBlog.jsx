@@ -5,7 +5,7 @@ const SingleBlog = ({singleBlog,handleTimeBtn,handleBookmarkBtn}) => {
   
   
 
-  const {_id,Author_name,author_img,blog_title,read_time,cover_img}=singleBlog
+  const {id,Author_name,author_img,blog_title,read_time,cover_img}=singleBlog
   return (
     <>
     <div className="card mb-3">
@@ -28,7 +28,7 @@ const SingleBlog = ({singleBlog,handleTimeBtn,handleBookmarkBtn}) => {
             <div className="mx-3 ">{read_time} min read </div>
             <svg
 
-            onClick={()=>handleBookmarkBtn(blog_title)}
+            onClick={()=>handleBookmarkBtn(blog_title,id)}
 
 
               xmlns="http://www.w3.org/2000/svg"

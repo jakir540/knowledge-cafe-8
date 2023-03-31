@@ -7,7 +7,7 @@ const QuestionAns = () => {
             <h1 className='text-primary text-capitalize my-5 fw-bold'>answers of the following questions:</h1>
             <div>
                 <h2>Props vs state</h2>
-                <p>Ans:</p>
+                <p>Ans:Any React project has a lot of components.Props means like HTML property. one component to the other component send to any data using the props.these data transfer like object (props) usally we use the props item like any object </p>
             </div>
             <div>
                 <h2>How does useState work?</h2>
