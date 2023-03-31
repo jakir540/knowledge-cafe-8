@@ -19,40 +19,33 @@ const Home = () => {
 
   const handleBookmarkBtn = (blog_title, id) => {
     let bookmark = [];
-    const product = { blog_title, id };
+    const blogDetails = { blog_title, id };
     if (title) {
       const isThisBookmarkedBlog = title.find((blog) => blog.id == id);
       if (isThisBookmarkedBlog) {
         handleToast("this blog already bookmarked");
       } else {
-        bookmark.push(...title, product);
-
+        bookmark.push(...title, blogDetails);
         setTitle(bookmark);
+        setBlogNumber(blogNumber + 1);
       }
-    } else {
-      bookmark.push(product);
-
-      setTitle(bookmark);
-    }
-
-    if (blogNumber == id) {
-      handleToast("blog number already bookmarked");
-    } else {
-      setBlogNumber(blogNumber + 1);
-    }
+      } else {
+        bookmark.push(blogDetails);
+        setTitle(bookmark);
+      }  
   };
 
   return (
-    <div className="container">
+    <div className="container mt-5">
       <div className="d-flex justify-content-between row container mx-auto">
-        <div className="col-lg-8 border border-primary">
+        <div className="col-lg-8">
           <Blogs
             handleTimeBtn={handleTimeBtn}
             handleBookmarkBtn={handleBookmarkBtn}
           ></Blogs>
         </div>
 
-        <div className="col-lg-4 border border-info">
+        <div className="col-lg-4">
           <SideBar
             spentTime={spentTime}
             blogNumber={blogNumber}

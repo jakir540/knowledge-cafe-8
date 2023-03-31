@@ -1,13 +1,9 @@
 import React from "react";
-import { useState,useEffect } from "react";
+import { useState, useEffect } from "react";
 import SingleBlog from "../SingleBlog/SingleBlog";
 
-
-
-
-
-const Blogs = ({handleTimeBtn,handleBookmarkBtn}) => {
- const [blogs,setBlogs]=useState([])
+const Blogs = ({ handleTimeBtn, handleBookmarkBtn }) => {
+  const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     fetch("data.json")
@@ -15,15 +11,16 @@ const Blogs = ({handleTimeBtn,handleBookmarkBtn}) => {
       .then((data) => setBlogs(data));
   }, []);
 
-
   return (
     <div>
-      <p>this is the blog components</p>
-
-
-     {
-      blogs.map((singleBlog) => <SingleBlog key={singleBlog.id} singleBlog = {singleBlog} handleTimeBtn={handleTimeBtn} handleBookmarkBtn={handleBookmarkBtn} ></SingleBlog>)
-     }
+      {blogs.map((singleBlog) => (
+        <SingleBlog
+          key={singleBlog.id}
+          singleBlog={singleBlog}
+          handleTimeBtn={handleTimeBtn}
+          handleBookmarkBtn={handleBookmarkBtn}
+        ></SingleBlog>
+      ))}
     </div>
   );
 };

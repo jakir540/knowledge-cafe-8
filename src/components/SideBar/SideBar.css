@@ -1,3 +1,15 @@
-.blogTitle{
-    border-radius: 8px;
+.blogTitle {
+  border-radius: 8px;
+  background-color: rgb(193, 141, 77);
+ 
+}
+.bookmarksItem {
+  position: sticky;
+  top: 0;
+  background-color: bisque;
+  border-radius: 15px;
+}
+.content {
+  background-color: aquamarine;
+  margin-top: 50px;
 }
