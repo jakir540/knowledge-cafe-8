@@ -6,7 +6,7 @@ import SingleBlog from "../SingleBlog/SingleBlog";
 
 
 
-const Blogs = () => {
+const Blogs = ({handleTimeBtn}) => {
  const [blogs,setBlogs]=useState([])
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Blogs = () => {
 
 
      {
-      blogs.map((singleBlog) => <SingleBlog key={singleBlog._id} singleBlog = {singleBlog}></SingleBlog>)
+      blogs.map((singleBlog) => <SingleBlog key={singleBlog._id} singleBlog = {singleBlog} handleTimeBtn={handleTimeBtn}></SingleBlog>)
      }
     </div>
   );

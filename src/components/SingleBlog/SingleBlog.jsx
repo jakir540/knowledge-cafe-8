@@ -1,6 +1,10 @@
 import React from 'react';
+import './SingleBlog.css'
 
-const SingleBlog = ({singleBlog}) => {
+const SingleBlog = ({singleBlog,handleTimeBtn}) => {
+  
+  
+
   const {_id,Author_name,author_img,blog_title,read_time,cover_img}=singleBlog
   return (
     <>
@@ -42,7 +46,7 @@ const SingleBlog = ({singleBlog}) => {
         <h1 className="card-title">{blog_title}</h1>
         <p className="text-muted">#beginners   #programming</p>
 
-        <a className="card-text text-primary cursor-pointer">Mark as read</a>
+        <button onClick={()=> handleTimeBtn(read_time)} className="card-text  cursor-pointer border-0 btn"><a href="#">Mark as read</a></button>
       </div>
     </div>
   </>
