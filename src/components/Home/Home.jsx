@@ -6,14 +6,24 @@ import SideBar from "../SideBar/SideBar";
 const Home = () => {
   const[spentTime,setSpentTime]=useState(0)
   const [blogNumber ,setBlogNumber]=useState(0)
+  const [title,setTitle]= useState([])
 
   const handleTimeBtn =(time)=>{
     let totalTime = spentTime + time
     setSpentTime(totalTime);
   }
 
-  const handleBookmarkBtn=()=>{
+  const handleBookmarkBtn=(BlogTitle)=>{
     setBlogNumber(blogNumber+1);
+    let header=[]
+    if (title) {
+      header=[...title,BlogTitle]
+      setTitle(header);  
+
+    }else{
+      setTitle(BlogTitle);
+    }    
+    
   }
 
   return (
@@ -24,7 +34,7 @@ const Home = () => {
         </div>
    
         <div className="col-lg-4 border border-info">
-        <SideBar spentTime={spentTime} blogNumber={blogNumber}></SideBar>
+        <SideBar spentTime={spentTime} blogNumber={blogNumber} title={title} ></SideBar>
         </div>
       </div>
       <QuestionAns></QuestionAns>

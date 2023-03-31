@@ -28,7 +28,7 @@ const SingleBlog = ({singleBlog,handleTimeBtn,handleBookmarkBtn}) => {
             <div className="mx-3 ">{read_time} min read </div>
             <svg
 
-            onClick={()=>handleBookmarkBtn()}
+            onClick={()=>handleBookmarkBtn(blog_title)}
 
 
               xmlns="http://www.w3.org/2000/svg"
