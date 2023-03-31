@@ -8,7 +8,7 @@ const Home = () => {
   const [spentTime, setSpentTime] = useState(0);
   const [blogNumber, setBlogNumber] = useState(0);
   const [title, setTitle] = useState([]);
-
+// Total Time spent calculate function here
   const handleTimeBtn = (time) => {
     let totalTime = spentTime + time;
     setSpentTime(totalTime);
@@ -16,7 +16,7 @@ const Home = () => {
   const handleToast = (text) => {
     toast(text);
   };
-
+// book mark button function call 
   const handleBookmarkBtn = (blog_title, id) => {
     let bookmark = [];
     const blogDetails = { blog_title, id };
@@ -29,10 +29,10 @@ const Home = () => {
         setTitle(bookmark);
         setBlogNumber(blogNumber + 1);
       }
-      } else {
-        bookmark.push(blogDetails);
-        setTitle(bookmark);
-      }  
+    } else {
+      bookmark.push(blogDetails);
+      setTitle(bookmark);
+    }
   };
 
   return (
