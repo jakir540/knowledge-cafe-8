@@ -1,0 +1,14 @@
+.questionBlog div{
+    border: 1px solid saddlebrown;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    
+}
+.questionBlog p{
+    color: gray;
+    font-family: sans-serif;
+    font-weight: 500;
+}

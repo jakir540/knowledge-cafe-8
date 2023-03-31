@@ -1,5 +1,6 @@
 import React from "react";
 import SpentTime from "../SpentTime/SpentTime";
+import "./SideBar.css"
 
 const SideBar = ({spentTime,blogNumber,title}) => {
     
@@ -9,10 +10,10 @@ const SideBar = ({spentTime,blogNumber,title}) => {
 
      
 
-        <h3>Bookmarked Blogs : {blogNumber}</h3>
+        <h3 className="mb-5 fw-bold">Bookmarked Blogs : {blogNumber}</h3>
 
         {
-            title.map((singleTitle)=> <h4 className="border py-3 my-3">{singleTitle}</h4>)
+            title.map((singleTitle)=> <h5 className="blogTitle border p-3 my-3 fw-semibold">{singleTitle}</h5>)
         }
       
     </div>
