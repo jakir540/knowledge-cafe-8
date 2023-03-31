@@ -1,7 +1,7 @@
 import React from 'react';
 import './SingleBlog.css'
 
-const SingleBlog = ({singleBlog,handleTimeBtn}) => {
+const SingleBlog = ({singleBlog,handleTimeBtn,handleBookmarkBtn}) => {
   
   
 
@@ -27,6 +27,10 @@ const SingleBlog = ({singleBlog,handleTimeBtn}) => {
           <div className="d-flex m-2">
             <div className="mx-3 ">{read_time} min read </div>
             <svg
+
+            onClick={()=>handleBookmarkBtn()}
+
+
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 24 24"

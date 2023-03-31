@@ -6,7 +6,7 @@ import SingleBlog from "../SingleBlog/SingleBlog";
 
 
 
-const Blogs = ({handleTimeBtn}) => {
+const Blogs = ({handleTimeBtn,handleBookmarkBtn}) => {
  const [blogs,setBlogs]=useState([])
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Blogs = ({handleTimeBtn}) => {
 
 
      {
-      blogs.map((singleBlog) => <SingleBlog key={singleBlog._id} singleBlog = {singleBlog} handleTimeBtn={handleTimeBtn}></SingleBlog>)
+      blogs.map((singleBlog) => <SingleBlog key={singleBlog._id} singleBlog = {singleBlog} handleTimeBtn={handleTimeBtn} handleBookmarkBtn={handleBookmarkBtn} ></SingleBlog>)
      }
     </div>
   );
