@@ -41,7 +41,8 @@ const QuestionAns = () => {
         <h2>How Does React work?</h2>
         <p>
           Ans: ReactJS divides the UI into reusable pieces of code known as
-          components.React components work similarly to JavaScript functions.{" "}
+          components.React components work similarly to JavaScript functions
+          react internally maintained a virtual Dom .If Change the any state Virtual dom and real dom compare between them and react use a diff algorithm and understand the which state change then ract only change that state which the different the between.finally actual dom update it . 
         </p>
       </div>
     </div>
